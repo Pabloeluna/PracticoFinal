@@ -1,0 +1,33 @@
+main{
+    display: grid;
+    grid-template-areas: "head head head"
+    "nav nav nav"
+    "sidebar content content"
+    "foot foot foot";
+    grid-template-rows: 80px auto 80px;
+}
+header{
+    grid-area: head;
+    background-color: black;
+    color: white;
+}
+nav{
+    grid-area: nav;
+    background-color: blueviolet;
+    color: white;
+}
+aside{
+    grid-area:sidebar;
+    background-color: darkmagenta;
+    color: white;
+}
+article{
+    grid-area: content;
+    background-color:cornflowerblue;
+    color: white;
+}
+footer{
+    grid-area:foot;
+    background-color: black;
+    color: white;
+}
