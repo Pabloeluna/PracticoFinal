@@ -4,6 +4,52 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.header{
+		padding-left: 10px;
+		padding-top: 10px;
+		margin-left: 57px;
+		float: left;
+		position: relative;
+		width: 45%;
+		height: auto;
+	};
+
+
+.cont-header
+{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 10px;   
+    padding-bottom: 10px;
+    width: 97%;
+	color: #febd59;
+}
+
+.cont-header div{
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    position: relative;
+    float:left;
+    width: 45%;
+    height: auto;
+}
+
+.cont-header nav{
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    position: relative;
+    float:right;
+    width: 45%;
+    height: auto;
+}
+
+
+
+
+
 .slider-frame {
 	width: 800px;
     height: auto;
@@ -40,4 +86,65 @@
 	
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
+}
+.sec-history{
+	font-size: 14px;
+    padding-left: 10px;
+    padding-top: 10px;   
+    padding-bottom: 10px;
+    width: 97%;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.div-history{
+	margin-top: 5px;
+}
+
+.p-history{
+	padding: 5px;
+	margin: 5px;
+	
+}
+
+
+.sec-servicios{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 10px;   
+    padding-bottom: 10px;
+    width: 97%;}
+	
+
+.sec-panificacion{
+	margin-top: 5px;
+	width: 30%;
+	position: relative;
+    float:left;
+}
+
+.sec-pasteleria{
+	margin-top: 5px;
+	width: 30%;
+	position: relative;
+    float:left;
+}
+
+.sec-regalos{
+	margin-top: 5px;
+	width: 30%;
+	position: relative;
+    float:left;
+}
+
+.sec-footer{
+	padding-left: 10px;
+	padding-top: 10px;
+	margin-left: 57px;
+	/*float: left;
+	position: relative;*/
+	width: 45%;
+	height: auto;
+
 }
