@@ -17,7 +17,7 @@ padding: 0px;
     
 }
 
-.TituloColorTexto{
+.tituloColorTexto{
     position: relative;
     padding-left: 25px;
     bottom: -8px;
@@ -25,27 +25,55 @@ padding: 0px;
     color: rgb(255, 255, 255);
     font-size: 40px;
 }
+
+.tituloGeneralTexto{
+    position: relative;
+    padding-left : 650px;
+    bottom: 0px;
+    top: -8px;
+    font-family:fantasy;
+    color: black;
+    font-size: 40px;
+}
+
+
 .textura{
     background-attachment: scroll;
     background-image: url(/img/textura.png);
     background-repeat: repeat;
     background-position: center;
     background-size: 188px auto;
-    height: 450px;
     bottom: 0;
     content: "";
-    /*display: block;*/
     left: 0;
-    /*position: absolute;*/
     right: 0;
 }
+.text-his{
+    height: 400px;
+}
+.text-prod{
+    height: 430px;
+}
 
-.Contenido{
+.text-car{
+    height: 550px;
+}
+
+.text-cont-prod{
+    height: 260px;
+}
+
+.contenido{
     display: flex;
     background-color: white;
 }
+.contenidoCarrusel{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+}
 
-.TituloHistoria{
+.tituloHistoria{
     position: relative;
     padding-left : 250px;
     bottom: 0px;
@@ -87,7 +115,7 @@ padding: 0px;
 
 .d{
     position: relative;
-    color: darkgoldenrod;
+    color: #ffbd59;
     top:-3px
 }
 
@@ -101,7 +129,7 @@ padding: 0px;
 
 .p-contTitulo{
     margin-left: 15px;
-    background-image: linear-gradient(105deg,  white 39%, darkgoldenrod 76%);
+    background-image: linear-gradient(105deg,  white 39%, #ffbd59 76%);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
     text-align: right;
@@ -121,7 +149,7 @@ padding: 0px;
     
 }   
 
-.TituloColorTextoIzq{
+.tituloColorTextoIzq{
     position: relative;
     left : 50px;
     bottom: -8px;
@@ -130,7 +158,7 @@ padding: 0px;
     font-size: 40px;
 }
 
-.TituloHistoriaIzq{
+.tituloHistoriaIzq{
     position: relative;
     left : 70px;
     bottom: 0px;
