@@ -39,7 +39,7 @@ padding: 0px;
 
 .textura{
     background-attachment: scroll;
-    background-image: url(/img/textura.png);
+    background-image: url(../img/textura.png);
     background-repeat: repeat;
     background-position: center;
     background-size: 188px auto;
