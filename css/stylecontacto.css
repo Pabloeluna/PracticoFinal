@@ -1,7 +1,7 @@
 .contacto_formulario{
     width: 460px;
     height: auto;
-    margin: 25px auto;
+    margin-left: -25px ;
     border-radius: 10px;
     padding-top: 5px;
     padding-bottom: 20px;
@@ -21,6 +21,13 @@ input{
     padding-left: 10px;
     margin-bottom: 20px;
 }
+
+
+.cont-flex {
+    display: flex;
+  }
+
+  
 
 textarea{
     background-color: #fbfbfb;
@@ -77,11 +84,20 @@ button p{
 }
 
 .pan_bp{
-    margin-left: 10%;
+    margin-left: 0%;
+    width: 30%;
+    height: 800px;
     margin-top: 0%;
+    background-image: url("../img/panbolsa.png") ;
+    background-repeat: no-repeat;
 }
 
 .vaso_bp{
-        margin-right: 10%;
+        display:flexbox;
+        align-items: center;
         margin-top: 0%;
+        width: 30%;
+        background-image: url("../img/vaso.png");
+        background-repeat: no-repeat;
+    
 }
