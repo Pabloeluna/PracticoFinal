@@ -60,7 +60,7 @@ padding: 0px;
 }
 
 .text-suc{
-    height: 350px;
+    height: 380px;
 }
 
 .text-cont-prod{
@@ -71,6 +71,15 @@ padding: 0px;
     display: flex;
     background-color: white;
 }
+
+.contenido-suc{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+
+
 .contenidoCarrusel{
     display: flex;
     background-color: white;
@@ -173,16 +182,20 @@ padding: 0px;
 }
 
 .suc-case{
-    width: 50%;
-    background-image: url(../img/distintospanes.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 200px auto;
+
     padding: 20px;
     
 }
 
-.suc-case div{
+.suc-case img{
+    width: 300px;
+}
+
+
+
+
+.suc-case-text div{
+
     margin-left: 15px;
     background-image: linear-gradient(105deg,  white 39%, #ffbd59 76%);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -191,17 +204,23 @@ padding: 0px;
     padding: 5px 10px 0px 0px;
 }
 
-.suc-case p{
+.suc-case-text p{
     margin-left: 15px;
+    align-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
     text-align: right;
     padding: 5px 10px 0px 0px;
 }
 
+.suc-case-text iframe{
+    padding: 10px
+}
+
 .suc-resaltado{
     margin-left: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(105deg,  white 39%, #ffbd59 76%);
     font-size:large;
     text-align: right;
     padding: 5px 10px 0px 0px;
