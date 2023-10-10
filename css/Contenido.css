@@ -19,7 +19,7 @@ padding: 0px;
 
 .tituloColorTexto{
     position: relative;
-    padding-left: 25px;
+    /*padding-left: 25px;*/
     bottom: -8px;
     font-family:fantasy;
     color: rgb(255, 255, 255);
@@ -28,7 +28,7 @@ padding: 0px;
 
 .tituloGeneralTexto{
     position: relative;
-    padding-left : 650px;
+    padding-left : 700px;
     bottom: 0px;
     top: -8px;
     font-family:fantasy;
@@ -60,7 +60,7 @@ padding: 0px;
 }
 
 .text-suc{
-    height: 100px;
+    height: 350px;
 }
 
 .text-cont-prod{
@@ -170,4 +170,39 @@ padding: 0px;
     font-family:fantasy;
     color: black;
     font-size: 40px;
+}
+
+.suc-case{
+    width: 50%;
+    background-image: url(../img/distintospanes.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px auto;
+    padding: 20px;
+    
+}
+
+.suc-case div{
+    margin-left: 15px;
+    background-image: linear-gradient(105deg,  white 39%, #ffbd59 76%);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    text-align: right;
+    padding: 5px 10px 0px 0px;
+}
+
+.suc-case p{
+    margin-left: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    text-align: right;
+    padding: 5px 10px 0px 0px;
+}
+
+.suc-resaltado{
+    margin-left: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:large;
+    text-align: right;
+    padding: 5px 10px 0px 0px;
 }
