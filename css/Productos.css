@@ -1,0 +1,89 @@
+.contenidoCarrusel{
+    display: flex;
+    justify-content: center;
+}
+
+.sec-carusel-row{
+	padding: 0px;
+	border-radius: 15px;
+	width: 700px;
+	height: 500px;
+}
+.slider-frame {
+	width: 700px;
+    height: 500px;
+	/*margin:50px auto 50px;*/
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 700px;
+    height: 500px;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+.sec-panificacion{	
+	margin: 5px;
+
+}
+
+.sec-panificacion i{
+	color: #febd59;
+	font-size: medium;
+	line-height:1.5em;
+}
+
+.sec-pasteleria{
+	margin: 15px;
+
+}
+
+.sec-pasteleria i{
+	color: #ffbd59;
+	font-size: medium;
+	line-height:1.5em;
+}
+
+.sec-regalos{
+	margin: 15px;
+}
+
+
+.sec-regalos i{
+	color: #ffbd59;
+	line-height:1.5em;
+}
+
+.p-cont-list{
+    margin-left: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    text-align: right;
+    padding: 5px 10px 0px 0px;
+}

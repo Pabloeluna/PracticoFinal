@@ -4,10 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/Contenido.css">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="css/stylecontacto.css">
+    <link rel="stylesheet" href="css/index.css">
+   <link rel="stylesheet" href="css/contactos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="/img/bp-icono.ico" type="image/x-icon">
@@ -16,50 +14,40 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="img/logo2.png">
-        
-           <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-           <br><br><br><br><br><br><br>
-        
-            <h2 class="nombre-empresa">Bendito Pan</h2>
-        
-            <br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br>
-        
-            <nav>
-                <a href="index.html" class="nav">Home</a>
-                <a href="productos.html" class="nav">Productos</a>
-                <a href="sucursales.html" class="nav">Sucursales</a>
-                <a href="contacto.html" class="nav">Contacto</a>
-            </nav>
+    <header class="head-in">
+        <div class="head-logo">
+            <img src="img/logo2.png" alt="Bendito Pan Logo">
         </div>
+        <div class="head-text">
+            Bendito Pan
+        </div>
+        <nav class="head-nav">
+                <a href="index.html">Home</a>
+                <a href="productos.html">Productos</a>
+                <a href="sucursales.html">Sucursales</a>
+                <a href="contacto.html">Contacto</a>
+        </nav>
     </header>
-
+    <!--Titulo de la pagina-->
     <section>
-        <div>
-            <div class="tituloColor">
+        <div class="tituloColor">
                 <div class="tituloColorTexto">NUESTROS</div>
-            </div>
-        </div> 
+        </div>
         <div class="tituloGeneralTexto">
             CONTACTOS
         </div>
-        <div>          
-            <h4 class="antes_formulario">Comentanos tus inquietudes, observaciones o sugerencias sobre nuestro servicio.</h4>
-            <h4 class="antes_formulario">Tus comentarios y sugerencias son muy importantes para nosotros.</h4>
-        </div>
-        <div class="cont-flex">
-            <!--Imagen de pan en bolsa-->
-        
-            <div class="pan_bp">
-                <br>
-                <!--p>
-                        <img src="img/panbolsa.png" alt="Pan en bolsa de Bendito Pan" align="left">
-                    </p-->
+    </section>
+    <section>
+    <div>          
+        <h4 class="antes_formulario">Comentanos tus inquietudes, observaciones o sugerencias sobre nuestro servicio.</h4>
+        <h4 class="antes_formulario">Tus comentarios y sugerencias son muy importantes para nosotros.</h4>
+    </div>
+    </section>
+    <section>
+        <div class="contenido">
+            <div class="mostrar-div">
+                <img src="img/panbolsa.png" alt="Pan en bolsa de Bendito Pan" class="img-pan">
             </div>
-        
             <!--Formulario de consulta-->
             <div class="contacto_formulario">
                 <form action="" method="">
@@ -88,7 +76,7 @@
                         <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
                             placeholder="Dejá acá tu comentario..."></textarea>
                     </p>
-                    <button type="submit" name="enviar_formulario" id="enviar">
+                    <button type="submit" name="enviar_formulario" id="enviar" onclick="validarCampos">
                         <p>Enviar</p>
                     </button>
                     <p class="aviso">
@@ -96,38 +84,27 @@
                     </p>
                 </form>
             </div>
-        
+    
             <!--Imagen de vaso con café-->
-            <div class="vaso_bp">
-                <br>
-                <!--
-                    <img src="img/vaso.png" alt="Vaso de café de Bendito Pan" align="right">
-                    -->
+            <div class="mostrar-div">
+                <img src="img/vaso.png" alt="Vaso de café de Bendito Pan" align="right">
             </div>
+        </div>
         </div>
     </section>
-    <!--Sucursales-->
-    <Section>
-        <div class="textura text-suc">
-            <!--Agregar casa central-- >
-            <p><b>Casa central:</b>Bernardino Rivadavia 302, Bº Centro, Córdoba capital, Córdoba, Argentina</p>
-            -->
-        </div>
-        
-    </Section>
-    <!--Seccion de footer-->
-    <br>
-        <section class="sec-footer">
-            <div >
-                <p>
-                    <a href="" class='bx bxl-twitter'></a>
-                    <i class='bx bxl-facebook-circle' aria-colcount=""></i>
-                    <i class='bx bxl-pinterest'></i>
-                    <i class='bx bxl-instagram-alt'></i>
-                    <i class='bx bxl-linkedin-square'></i>
-                </p>
+
+
+
+    <section class="sec-footer">
+        <div >
+            <p>
+                <i class='bx bxl-twitter bx-sm'></i>
+                <i class='bx bxl-facebook-circle bx-sm' aria-colcount=""></i>
+                <i class='bx bxl-pinterest bx-sm'></i>
+                <i class='bx bxl-instagram-alt bx-sm'></i>
+                <i class='bx bxl-linkedin-square bx-sm'></i>
+            </p>
             <p>Derechos Reservados @2023 </p>
-            </div>
-</section>
+        </div>
+    </section>
 </body>
-</html>
