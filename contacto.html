@@ -50,39 +50,44 @@
             </div>
             <!--Formulario de consulta-->
             <div class="contacto_formulario">
-                <form action="" method="">
+                <!-- <form action="" method=""> -->
                     <p>
                         <label for="nombre" class="colocar_nombre">Nombre<span class="obligatorio">*</span></label>
-                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                        <input type="text" name="introducir_nombre" id="nombre" 
                             placeholder="Escribe tu nombre">
                     </p>
                     <p>
                         <label for="apellido" class="colocar_apellido">Apellido<span class="obligatorio">*</span></label>
-                        <input type="text" name="introducir_apellido" id="apellido" required="obligatorio"
+                        <input type="text" name="introducir_apellido" id="apellido" 
                             placeholder="Escribe tu apellido">
                     </p>
                     <p>
                         <label for="email" class="colocar_email">Email<span class="obligatorio">*</span></label>
-                        <input type="email" name="introducir_email" id="email" required="obligatorio"
+                        <input type="email" name="introducir_email" id="email" 
                             placeholder="Escribe tu email">
                     </p>
                     <p>
                         <label for="asunto" class="colocar_asunto">Asunto<span class="obligatorio">*</span></label>
-                        <input type="text" name="introducir_asunto" id="asunto" required="obligatorio"
+                        <input type="text" name="introducir_asunto" id="asunto" 
                             placeholder="Escribe un asunto">
                     </p>
                     <p>
                         <label for="mensaje" class="colocar_mensaje">Mensaje<span class="obligatorio">*</span></label>
-                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" 
                             placeholder="Dejá acá tu comentario..."></textarea>
                     </p>
-                    <button type="submit" name="enviar_formulario" id="enviar" onclick="validarCampos">
+                    <script>
+                    </script>
+
+                    <button onclick="validarCampos()">Validar</button>
+                    <!-- <button type="submit" name="enviar_formulario" id="enviar" onclick="validarCampos">
                         <p>Enviar</p>
-                    </button>
+                    </button> -->
                     <p class="aviso">
                         <span class="obligatorio">*</span>Indica campos obligatorios
+                        <p> <input type="text" class="msjValidacion" name="error" id="error"></p>
                     </p>
-                </form>
+                <!-- </form> -->
             </div>
     
             <!--Imagen de vaso con café-->
@@ -107,4 +112,5 @@
             <p>Derechos Reservados @2023 </p>
         </div>
     </section>
+    <script src="js/form.js"></script>
 </body>

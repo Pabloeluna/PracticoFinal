@@ -113,3 +113,9 @@ button p{
       display:block;
     }
   }
+
+  .msjValidacion{
+    background-color:#febd59;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;  
+    border: none;
+  }
