@@ -1,0 +1,72 @@
+#div {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+}
+
+#div p {
+    text-align: center;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.label_op{
+    font-size: 40px;
+    display: inline-block;
+    color: grey;
+}
+
+.contenido_op{
+display: grid;
+/* width: 50%; */
+padding: 10px;
+justify-content: center;
+}
+
+.comentario{
+    display: flex;
+
+}
+
+.clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    
+}
+
+.cont_clas{
+    display: flex;
+
+}
+
+label:hover,
+label:hover~label {
+    color: #ffbd59;
+}
+
+input[type="radio"]:checked~label {
+    color:#ffbd59;
+}
+
+
+
+.opn-text{
+    margin-left: 15px;
+    align-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    text-align: right;
+    padding: 5px 10px 0px 0px;
+}
+
+.opn-text h3{
+    display: grid;
+    justify-content: center;
+}
+
+.opn-text p{
+    display: grid;
+    justify-content: center;
+}
