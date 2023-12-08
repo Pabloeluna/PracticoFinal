@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contactos.css">
+    <link rel="stylesheet" href="css/opinion.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <title>Tus opiniones</title>
+</head>
+<body>
+    <header class="head-in">
+        <div class="head-logo">
+            <img src="img/logo2.png" alt="Bendito Pan Logo">
+        </div>
+        <div class="head-text">
+            Bendito Pan
+        </div>
+        <nav class="head-nav">
+                <a href="index.html">Home</a>
+                <a href="productos.html">Productos</a>
+                <a href="sucursales.html">Sucursales</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="opinion_crud.html">Tu opinión</a>
+                
+        </nav>
+    </header>
+    <section>
+        <div class="tituloColor">
+                <div class="tituloColorTexto">TU OPINION</div>
+        </div>
+        <div class="tituloGeneralTexto">
+            NOS INTERESA
+        </div>
+        <div>          
+            <h4 class="antes_formulario">Comentanos tus inquietudes, observaciones o sugerencias sobre nuestro servicio.</h4>
+            <h4 class="antes_formulario">Tus comentarios y sugerencias son muy importantes para nosotros.</h4>
+        </div>
+    </section>
+    <main>
+        <div id="app" class="container">
+            
+            <a class="btn btn-primary" href="./opinion_alta.html">Nuevo</a>
+            <br><br>
+            <div v-if="error">
+                <p>Lo sentimos , ........</p>
+            </div>
+            <div v-else>
+                <section v-if="cargando">
+                    <div class="spinner-border"></div>
+                    <p>Cargando .....</p>
+                </section>
+                <section v-else>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <td>Nro Comentario</td>
+                                    <td>Nombre</td>
+                                    <td>Comentario</td>
+                                    <td>Calificacion</td>
+                                    <td>Acciones</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="" v-for="Calificacion in Calificaciones">
+                                    <td scope="row">{{Calificacion.id}}</td>
+                                    <td>{{Calificacion.nombre}}</td>
+                                    <td>{{Calificacion.descripcion}}</td>
+                                    <td>{{Calificacion.calificacion}}</td>
+                                    <td>
+                                        <a class="btn btn-primary" :href="'./opinion_modi.html?id='+Calificacion.id">Editar</a>
+                                        <!-- <a class="btn btn-primary" :href="'./producto_update.html?id='+ producto.id" >Editar</a> -->
+
+                                        
+                                        <button type="button" class="btn btn-danger"
+                                            v-on:click="eliminar(Calificacion.id)">Eliminar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <div class="textura text-his">
+        <br>
+    </div>
+   
+    <section class="sec-footer">
+        <div >
+            <p>
+                <i class='bx bxl-twitter bx-sm'></i>
+                <i class='bx bxl-facebook-circle bx-sm' aria-colcount=""></i>
+                <i class='bx bxl-pinterest bx-sm'></i>
+                <i class='bx bxl-instagram-alt bx-sm'></i>
+                <i class='bx bxl-linkedin-square bx-sm'></i>
+            </p>
+            <p>Derechos Reservados @2023 </p>
+        </div>
+    </section>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
+    <script src="js/listado.js"></script>
+</body>
+</html>

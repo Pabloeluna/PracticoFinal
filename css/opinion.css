@@ -50,16 +50,20 @@ input[type="radio"]:checked~label {
     color:#ffbd59;
 }
 
+.estrella {
+    color:#ffbd59;
+}
 
 
-.opn-text{
+.opn-text-r{
     margin-left: 15px;
     align-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
-    text-align: right;
     padding: 5px 10px 0px 0px;
+    text-align: right;
 }
+
 
 .opn-text h3{
     display: grid;
@@ -69,4 +73,43 @@ input[type="radio"]:checked~label {
 .opn-text p{
     display: grid;
     justify-content: center;
+}
+.opn-text-l{
+    margin-left: 15px;
+    align-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    padding: 5px 10px 0px 0px;
+    text-align: left;
+
+}
+
+.tabla{
+    display: flex;
+    justify-content: space-between;
+}
+
+table{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+td, th {
+    border: #ffbd59 1px solid;
+  }
+
+.boton{
+    background-color: #ffbd59;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+
+
+}
+
+.boton a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
 }

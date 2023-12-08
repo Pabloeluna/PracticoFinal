@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contactos.css">
+    <link rel="stylesheet" href="css/opinion.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Tus opiniones</title>
+</head>
+
+<body>
+    <header class="head-in">
+        <div class="head-logo">
+            <img src="img/logo2.png" alt="Bendito Pan Logo">
+        </div>
+        <div class="head-text">
+            Bendito Pan
+        </div>
+        <nav class="head-nav">
+                <a href="index.html">Home</a>
+                <a href="productos.html">Productos</a>
+                <a href="sucursales.html">Sucursales</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="opinion_crud.html">Tu opinión</a>
+                
+        </nav>
+    </header>
+<section>
+    <div class="container" id="app">
+        
+        <div class="prod-cont">
+          <form id="formulario" >  
+            <div>
+                <div>
+                    <div class="opn-text-l">Nro Comentario</div>
+                    <!-- <input class="texto_mensaje" type="text" name="id" id="id" disabled="true"> -->
+                    <input type="number" name="id" id="id" disabled v-model="id">
+                </div>
+                <!-- <div class="cont_clas"> -->
+                <div>
+                    <div class="opn-text-l">Valoración:</div>
+                    <!-- <p class="clasificacion">
+                        <input id="radio1" type="radio" name="estrellas" @click="marcar(5)">
+                        <label class="label_op" for="radio1" name="lblestrellas">★</label>
+                        <input id="radio2" type="radio" name="estrellas" @click="marcar(4)">
+                        <label class="label_op" for="radio2" name="lblestrellas">★</label>
+                        <input id="radio3" type="radio" name="estrellas" @click="marcar(3)">
+                        <label class="label_op" for="radio3" name="lblestrellas">★</label>
+                        <input id="radio4" type="radio" name="estrellas" @click="marcar(2)">
+                        <label class="label_op" for="radio4" name="lblestrellas">★</label>
+                        <input id="radio5" type="radio" name="estrellas" @click="marcar(1)">
+                        <label class="label_op" for="radio5" name="lblestrellas">★</label>
+                    </p> -->
+                    <input id="valorEstrellas" type="text" v-model="calificacion">
+                </div>
+
+                <div>
+                    <div class="opn-text-l">Nombre</div>
+                    <!-- <input class="texto_mensaje" type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre"> -->
+                    <input type="text" name="nombre" id="nombre" v-model="nombre" placeholder="Ingresa tu nombre">
+
+                </div>
+                <div>
+                    <div class="opn-text-l">Comentario</div>
+                    <input class="texto_mensaje" type="text" id="descripcion" v-model="descripcion" placeholder="Dejá acá tu comentario...">
+                    </imput>
+                </div>
+                <div><input type="text" id="bandera" hidden ></div>
+                <div>
+                    <!-- <button class="boton" type="submit" @click="">Actualizar</button> -->
+                    <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
+
+                    <a class="boton" href="opinion_crud.html">Volver</a>
+                    <!--button @click="obtenerTexto">Agregar</button-->
+                </div>
+            </div>
+        </form>
+
+            <div>
+                <img src="img/opiniones.png" alt="Tu opinión nos interesa">
+            </div>
+        </div>
+        <div class="textura text-his">
+        </div>
+        <section class="sec-footer">
+            <div >
+                <p>
+                    <i class='bx bxl-twitter bx-sm'></i>
+                    <i class='bx bxl-facebook-circle bx-sm' aria-colcount=""></i>
+                    <i class='bx bxl-pinterest bx-sm'></i>
+                    <i class='bx bxl-instagram-alt bx-sm'></i>
+                    <i class='bx bxl-linkedin-square bx-sm'></i>
+                </p>
+                <p>Derechos Reservados @2023 </p>
+            </div>
+        </section>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="./js/modificacion.js"></script>
+
+        </body>
+
+</html>

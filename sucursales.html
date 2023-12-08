@@ -25,7 +25,7 @@
                 <a href="productos.html">Productos</a>
                 <a href="sucursales.html">Sucursales</a>
                 <a href="contacto.html">Contacto</a>
-                <a href="opinion.html">Tu opinión</a>
+                <a href="opinion_crud.html">Tu opinión</a>
                 
         </nav>
     </header>
@@ -40,8 +40,17 @@
         </div>
     </section>
     <!-- Mapa de las sucursales con link-->
-    <div class="mapa-link"><a href="map.html" target="_blank">▪ <i class='bx bx-map-alt'></i> Visita todas nuestras sucursales desde este Mapa ▪</a></div>
-    <div class="textura text-his">
+    <section>
+        <div class="contenedor-temp">
+            <h1>Temperatura</h1>
+            <select name="ciudad" id="ciudad">
+                <option value="cordoba"> Córdoba (Argentina)</option>
+                <option value="villa allende"> Villa Allende (Argentina)</option>
+            </select>
+            <h2 id="temp"> - </h2>    
+        
+        </div>
+    </section>
     <br>
                 
     </div>
@@ -123,5 +132,6 @@
         <p>Derechos Reservados @2023 </p>
     </div>
 </section>
+<script src="js/temp.js"></script>
 </body>
 </html>

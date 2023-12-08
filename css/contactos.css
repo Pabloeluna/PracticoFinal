@@ -39,7 +39,7 @@ input{
 
   
 
-textarea{
+.textarea{
     background-color: #fbfbfb;
     width: 405px;
     height: 150px;
@@ -75,6 +75,21 @@ button{
 
 button p{
     color: #000000;
+}
+
+.Acciones{
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #febd59;
+  border-color: #febd59;
+  border-style: solid;
+  border-radius: 10px;
+  width: 120px;
+  cursor: pointer;
 }
 
 .obligatorio{
