@@ -3,9 +3,12 @@ createApp({
     data() {
         return {
             Calificaciones: [],
-            url:'http://localhost:5000/Calificaciones',
-            url_alta:'http://localhost:5000/AltaCalificaciones',
-            url_del:'http://localhost:5000/DelCalificaciones',
+            // url:'http://localhost:5000/Calificaciones',
+            url:'https://pabloeluna.pythonanywhere.com/Calificaciones',
+            // url_alta:'http://localhost:5000/AltaCalificaciones',
+            url_alta:'https://pabloeluna.pythonanywhere.com/AltaCalificaciones',
+            // url_del:'http://localhost:5000/DelCalificaciones',
+             url_del:'https://pabloeluna.pythonanywhere.com/DelCalificaciones',
             // si el backend esta corriendo local usar localhost 5000(si no lo subieron a pythonanywhere)
             //url: 'https://comision23541.pythonanywhere.com/productos', // si ya lo subieron a pythonanywhere
             error: false,

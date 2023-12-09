@@ -9,8 +9,10 @@ createApp({
             nombre: "",
             descripcion: "",
             calificacion: 0,
-            url: 'http://localhost:5000/GetCalificaciones/' + id,
-            url_upd: 'http://localhost:5000/UpdCalificaciones/' + id,
+            // url: 'http://localhost:5000/GetCalificaciones/' + id,
+            url: 'https://pabloeluna.pythonanywhere.com/GetCalificaciones/' + id,
+            // url_upd: 'http://localhost:5000/UpdCalificaciones/' + id,
+            url_upd: 'https://pabloeluna.pythonanywhere.com/UpdCalificaciones/' + id,
             // url: 'https://comision23541.pythonanywhere.com/productos/' + id,
         }
     },
