@@ -30,7 +30,7 @@
                 <a href="productos.html">Productos</a>
                 <a href="sucursales.html">Sucursales</a>
                 <a href="contacto.html">Contacto</a>
-                <a href="opinion_crud.html">Tu opinión</a>
+                <a href="opinion.html">Tu opinión</a>
                 
         </nav>
     </header>
@@ -65,7 +65,6 @@
 
                 <div>
                     <div class="opn-text-l">Nombre</div>
-                    <!-- <input class="texto_mensaje" type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre"> -->
                     <input type="text" name="nombre" id="nombre" v-model="nombre" placeholder="Ingresa tu nombre">
 
                 </div>
@@ -77,9 +76,9 @@
                 <div><input type="text" id="bandera" hidden ></div>
                 <div>
                     <!-- <button class="boton" type="submit" @click="">Actualizar</button> -->
-                    <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
+                    <button type="button" class="boton" v-on:click="modificar()">Grabar</button>
 
-                    <a class="btn btn-success" href="opinion_crud.html">Volver</a>
+                    <a class="botonVolver" href="opinion_crud.html">Volver</a>
                     <!--button @click="obtenerTexto">Agregar</button-->
                 </div>
             </div>

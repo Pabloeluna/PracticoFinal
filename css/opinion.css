@@ -101,12 +101,44 @@ td, th {
     margin: 10px;
     border-radius: 5px;
     padding: 10px;
-    width: 300px;
+    width: 200px;
     text-align: center;
+    text-decoration: none;
+    color: black;
+    border: 2px;
 
 
 }
 
+.botonEliminar{
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px;
+    border-color: #ffbd59;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    color:#ffbd59;
+    border-style: solid;
+}
+
+.botonVolver{
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px;
+    border-style: solid;
+    border-color: #ffbd59;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+
+
+}
 .boton a{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;

@@ -27,7 +27,7 @@
                 <a href="productos.html">Productos</a>
                 <a href="sucursales.html">Sucursales</a>
                 <a href="contacto.html">Contacto</a>
-                <a href="opinion_crud.html">Tu opinión</a>
+                <a href="opinion.html">Tu opinión</a>
                 
         </nav>
     </header>
@@ -46,10 +46,10 @@
     <main>
         <div id="app" class="container">
             
-            <a class="btn btn-primary" href="./opinion_alta.html">Nuevo</a>
+            <a class="boton" href="./opinion_alta.html">Nuevo</a>
             <br><br>
             <div v-if="error">
-                <p>Lo sentimos , ........</p>
+                <p>Lo sentimos  ........</p>
             </div>
             <div v-else>
                 <section v-if="cargando">
@@ -58,16 +58,18 @@
                 </section>
                 <section v-else>
                     <div class="table-responsive">
-                        <table class="table table-bordered">
-                            <thead>
+                        <table class="table table-striped">
+                            
+                            <thead class="table-light">
                                 <tr>
-                                    <td>Nro Comentario</td>
-                                    <td>Nombre</td>
-                                    <td>Comentario</td>
-                                    <td>Calificacion</td>
-                                    <td>Acciones</td>
+                                    <th scope="col">Nro Comentario</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Comentario</th>
+                                    <th scope="col">Calificacion</th>
+                                    <th scope="col">Acciones</th>
                                 </tr>
                             </thead>
+
                             <tbody>
                                 <tr class="" v-for="Calificacion in Calificaciones">
                                     <td scope="row">{{Calificacion.id}}</td>
@@ -75,16 +77,19 @@
                                     <td>{{Calificacion.descripcion}}</td>
                                     <td>{{Calificacion.calificacion}}</td>
                                     <td>
-                                        <a class="btn btn-primary" :href="'./opinion_modi.html?id='+Calificacion.id">Editar</a>
-                                        <!-- <a class="btn btn-primary" :href="'./producto_update.html?id='+ producto.id" >Editar</a> -->
-
+                                        <div class="comentario">
+                                        <a class="boton" :href="'./opinion_modi.html?id='+Calificacion.id">Editar</a>
+                                        <!--a class="btn btn-secondary" :href="'./opinion_modi.html?id='+Calificacion.id">Editar</a-->
                                         
-                                        <button type="button" class="btn btn-danger"
-                                            v-on:click="eliminar(Calificacion.id)">Eliminar</button>
-                                    </td>
+                                        <!--button type="button" class="btn btn-success" v-on:click="eliminar(Calificacion.id)">Eliminar</button-->
+                                        <button type="button" class="botonEliminar" v-on:click="eliminar(Calificacion.id)">Eliminar</button>
+                                    
+                                        </div>
+                                        </td>
                                 </tr>
                             </tbody>
                         </table>
+                    
                     </div>
                 </section>
             </div>
