@@ -95,7 +95,7 @@ createApp({
                 fetch(this.url_alta, options)
                     .then(function () {
                         alert("Registro grabado")
-                        window.location.href = "./opinion_crud.html";
+                        window.location.href = "./opinion.html";
                     })
                     .catch(err => {
                         console.error(err);

@@ -85,7 +85,7 @@ createApp({
                 fetch(this.url_upd, options)
                     .then(function () {
                         alert("Registro modificado")
-                        window.location.href = "./opinion_crud.html";
+                        window.location.href = "./opinion.html";
                     })
                     .catch(err => {
                         console.error(err);
